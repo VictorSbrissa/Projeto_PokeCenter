@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet/less" type="text/css" href="./_css/styles.less" />
+    <title>Login</title>
+</head>
+<body>
+  <div class="logo_content">
+    <div class="logo">
+        <img class='imgem' src="../_css/_img/logo.png" alt=""  id="imgem">
+        <div class="logo_name"> PokeCenter</div>
+    </div>
+    <i class='bx bx-menu'  id="btn"></i>
+  </div>
+  <div class="wall">
+    <div class="login">
+      <h1>Welcome!</h1>
+      <input type="text" placeholder="Type your e-mail" id="login"><br><br>
+      <input type="password" placeholder="Password" - id="senha"><br><br>
+      <input class="button" type="submit" onclick="logar(); return false">
+    </div>
+  </div> 
+
+
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script>
+        less = {
+          env: "development"
+        };
+      </script>
+
+    <script>
+      function logar(){
+        var login = document.getElementById('login').value;
+        var senha = document.getElementById('senha').value;
+
+        if(login == 'admin' && senha == 'admin'){
+          alert('Welcome, please continue!');
+          location.href = '/home'
+        } else{
+          alert('Please, try it again!');  
+        }
+      }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir='ltr'>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet/less" type="text/css" href="./_css/stylesBar.less" />
+    <!--Tentativa BoxIcon-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+                
+</head>
+<body>
+    <div class='sidebar'>
+        <div class="logo_content">
+            <div class="logo">
+                <img class="logo" src="../_css/_img/logo.png" alt="">
+                <div class="logo_name"> PokeCenter</div>
+            </div>
+            <i class='bx bx-menu'  id="btn"></i>
+        </div>
+        <ul class="nav_lis">
+            <li>
+                    <i class='bx bx-file-find' ></i>
+                    <input type="text" placeholder="Search...">
+                    <span class="tooltip">Search</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid' ></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                    <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-user-check' ></i>
+                    <span class="links_name">User</span>
+                </a>
+                    <span class="tooltip">User</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-message-rounded-dots' ></i>
+                    <span class="links_name">Messages</span>
+                </a>
+                    <span class="tooltip">Messages</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-analyse' ></i>
+                    <span class="links_name">Analytics</span>
+                </a>
+                    <span class="tooltip">Analytics</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-folder-plus' ></i>
+                    <span class="links_name">Poke Manager</span>
+                </a>
+                    <span class="tooltip">Poke Manager</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-heart' ></i>
+                    <span class="links_name">New Heal</span>
+                </a>
+                    <span class="tooltip">New Heal</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-home-heart' ></i>
+                    <span class="links_name">Saved</span>
+                </a>
+                    <span class="tooltip">Saved</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bx-cog' ></i>
+                    <span class="links_name">Settings</span>
+                </a>
+                    <span class="tooltip">Settings</span>
+            </li>
+        </ul>
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+                    <img src="../_css/_img/profile.png" alt="">
+                    <div class="name_job">
+                        <div class="name">Victor Sbrissa</div>
+                        <div class="job">Estudante</div>
+                    </div>
+                </div>
+                <i class='bx bx-log-in-circle' id="log_out" onclick="exit(); return false"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home_content">
+        <div class="text"> Home Content </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script>
+        less = {
+          env: "development"
+        };
+    </script>
+
+    <script>
+        let btn  = document.querySelector("#btn");
+        let sidebar  = document.querySelector(".sidebar");
+        let search8tn  = document.querySelector(".bx-file-find");
+
+        btn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+        search8tn.onclick = function(){
+            sidebar.classList.toggle("active");
+        }
+    </script>
+    <script>
+        function exit(){
+        location.href = '/'
+        }
+    </script>
+
+</body>
+</html>
