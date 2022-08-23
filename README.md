@@ -1,14 +1,21 @@
 # Poke Center Menu
-
-- HTML
-- CSS
-- LESS
-
+<h4>
 A simple project, in which I bring a small idea of what a pokecenter management system would look like.
-
+</h4>
+<h4>
+Using:
+</h4>
+<h4>
+🥇 HTML </br>
+🥈 CSS  </br>
+🥉 LESS </br>
+</h4>
+<h4>
 It has a login screen done with verification in Jscript, modeled and designed with HTML+CSS (using a cleaner code with Less).
-
+</h4>
+<h4>
 After a simple verification, we have a Home screen, with a retractable menu, designed in FIGMA. Afterwards, analyze, build from HTML+ CSS, with functions produced from JScript
+</h4>
 <h1  align="center">A simple Login screen with JS validation to access!</h1>
 <div>
 <img align="center" src='https://raw.githubusercontent.com/VictorSbrissa/Projeto_PokeCenter/master/image/Tela_Login.PNG' width="450px"  />
@@ -20,5 +27,5 @@ After a simple verification, we have a Home screen, with a retractable menu, des
 <div>
 <img   align="rigth" src='https://raw.githubusercontent.com/VictorSbrissa/Projeto_PokeCenter/master/image/Menu_Inicial2.PNG' width="350px"  />
 </div>
-<h1>Futuramente pretendo aplicar tal estudo adicionando Angular!</h1>
+<h3 align="center"> 🚩 In the future I intend to apply this study by adding Angular! 🚩</h3>
 <h3 align="center" >👍🏼  How to reach me: www.linkedin.com/in/victor-sbrissa  👍🏼 </h3>
