@@ -20,4 +20,5 @@ After a simple verification, we have a Home screen, with a retractable menu, des
 <div>
 <img   align="rigth" src='https://raw.githubusercontent.com/VictorSbrissa/Projeto_PokeCenter/master/image/Menu_Inicial2.PNG' width="350px"  />
 </div>
+<h1>Futuramente pretendo aplicar tal estudo adicionando Angular!</h1>
 <h3 align="center" >👍🏼  How to reach me: www.linkedin.com/in/victor-sbrissa  👍🏼 </h3>
