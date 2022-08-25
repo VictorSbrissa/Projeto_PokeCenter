@@ -31,4 +31,5 @@ After a simple verification, we have a Home screen, with a retractable menu, des
 <img   align="rigth" alt="coding" width="400" src='https://raw.githubusercontent.com/VictorSbrissa/Projeto_PokeCenter/master/image/Menu_Inicial2.PNG' width="350px"  />
 </div>
 <h3 align="center"> 🚩 In the future I intend to apply this study by adding Angular! 🚩</h3>
+<h4 align="center"> To be continue... </ha4>
 <h3 align="center" >👍🏼  How to reach me: www.linkedin.com/in/victor-sbrissa  👍🏼 </h3>
