@@ -265,3 +265,153 @@ body{
      width: calc(100%-240px);
      left: 240px;
 }
+
+.swiper  {
+    width: 800px;
+}
+
+
+.assid_test{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.assid_text{
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 20vh  100vh;
+    grid-template-areas:    'main aside'
+                            'main aside';  
+    background: #FFF;
+}
+
+.body__sec{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .card__sec .image__sec{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding: 3px;
+    background: rgb(255, 255, 255);
+}
+
+section .card__sec .image__sec img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px  solid rgb(255, 0, 0);
+}
+
+.card__sec{
+    position: relative;
+    background: #FFF;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.card__sec::before{
+    content: "";
+    position: absolute;
+    height: 45%;
+    width: 100%;
+    background: #000;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.card__sec .card__sec__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+
+} 
+
+.card__sec .media__icons{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__sec .media__icons i{
+    color: rgb(255, 255, 255);
+    opacity: 0.6;
+    margin-top: 10px;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.card__sec .media__icons i:hover{
+    opacity: 1;
+}
+
+.card__sec .name_type_pokemon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #333;
+}
+
+.name_type_pokemon .name_pokemon{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.name_type_pokemon .type_pokemon{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.card__sec .ratting{
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+}
+
+.card__sec .ratting i{
+    font-size: 18px;
+    margin: 0 2px;
+    color: red;
+}
+
+.card__sec .button{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card__sec .button button{
+    background: red;
+    outline: none;
+    border: none;
+    color: #FFF;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.button button:hover{
+    background: rgb(255, 128, 128);
+}

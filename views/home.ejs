@@ -1,128 +1,324 @@
 <!DOCTYPE html>
 <html lang="pt-br" dir='ltr'>
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>home</title>
-    <link rel="stylesheet/less" type="text/css" href="./_css/stylesBar.less" />
-    <!--Tentativa BoxIcon-->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-                
-</head>
-<body>
-    <div class='sidebar'>
-        <div class="logo_content">
-            <div class="logo">
-                <img class="logo" src="../_css/_img/logo.png" alt="">
-                <div class="logo_name"> PokeCenter</div>
+
+<div class="container">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>home</title>
+        <link rel="stylesheet/less" type="text/css" href="./_css/stylesBar.less" />
+        <!--Tentativa BoxIcon-->
+        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+        <script src="https://kit.fontawesome.com/df5967bf56.js" crossorigin="anonymous"></script>
+
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+    </head>
+    <main class="container_menu">
+        <div class='sidebar'>
+            <div class="logo_content">
+                <div class="logo">
+                    <img class="logo" src="../_css/_img/logo.png" alt="">
+                    <div class="logo_name"> PokeCenter</div>
+                </div>
+                <i class='bx bx-menu' id="btn"></i>
             </div>
-            <i class='bx bx-menu'  id="btn"></i>
-        </div>
-        <ul class="nav_lis">
-            <li>
-                    <i class='bx bx-file-find' ></i>
+            <ul class="nav_lis">
+                <li>
+                    <i class='bx bx-file-find'></i>
                     <input type="text" placeholder="Search...">
                     <span class="tooltip">Search</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-grid' ></i>
-                    <span class="links_name">Dashboard</span>
-                </a>
+                </li>
+                <li>
+                    <a href="#Dash">
+                        <i class='bx bx-user-check' id="Dash" onclick="dash(); return false"></i>
+                        <span class="links_name">Dashboard</span>
+                    </a>
                     <span class="tooltip">Dashboard</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-user-check' ></i>
-                    <span class="links_name">User</span>
-                </a>
+                </li>
+                <li>
+                    <a href="#User">
+                        <i class='bx bx-user-check'></i>
+                        <span class="links_name">User</span>
+                    </a>
                     <span class="tooltip">User</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-message-rounded-dots' ></i>
-                    <span class="links_name">Messages</span>
-                </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-message-rounded-dots'></i>
+                        <span class="links_name">Messages</span>
+                    </a>
                     <span class="tooltip">Messages</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-analyse' ></i>
-                    <span class="links_name">Analytics</span>
-                </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-analyse'></i>
+                        <span class="links_name">Analytics</span>
+                    </a>
                     <span class="tooltip">Analytics</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-folder-plus' ></i>
-                    <span class="links_name">Poke Manager</span>
-                </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-folder-plus'></i>
+                        <span class="links_name">Poke Manager</span>
+                    </a>
                     <span class="tooltip">Poke Manager</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-heart' ></i>
-                    <span class="links_name">New Heal</span>
-                </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-heart'></i>
+                        <span class="links_name">New Heal</span>
+                    </a>
                     <span class="tooltip">New Heal</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-home-heart' ></i>
-                    <span class="links_name">Saved</span>
-                </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-home-heart'></i>
+                        <span class="links_name">Saved</span>
+                    </a>
                     <span class="tooltip">Saved</span>
-            </li>
-            <li>
-                <a href="#">
-                    <i class='bx bx-cog' ></i>
-                    <span class="links_name">Settings</span>
-                </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class='bx bx-cog'></i>
+                        <span class="links_name">Settings</span>
+                    </a>
                     <span class="tooltip">Settings</span>
-            </li>
-        </ul>
-        <div class="profile_content">
-            <div class="profile">
-                <div class="profile_details">
-                    <img src="../_css/_img/profile.png" alt="">
-                    <div class="name_job">
-                        <div class="name">Victor Sbrissa</div>
-                        <div class="job">Estudante</div>
+                </li>
+            </ul>
+            <div class="profile_content">
+                <div class="profile">
+                    <div class="profile_details">
+                        <img src="../_css/_img/profile.png" alt="">
+                        <div class="name_job">
+                            <div class="name">Victor Sbrissa</div>
+                            <div class="job">Estudante</div>
+                        </div>
                     </div>
+                    <i class='bx bx-log-in-circle' id="log_out" onclick="exit(); return false"></i>
                 </div>
-                <i class='bx bx-log-in-circle' id="log_out" onclick="exit(); return false"></i>
             </div>
         </div>
-    </div>
-    <div class="home_content">
-        <div class="text"> Home Content </div>
-    </div>
+        <div class="home_content">
+            <div class="text"> </div>
+        </div>
+    </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
-    <script>
-        less = {
-          env: "development"
-        };
-    </script>
 
-    <script>
-        let btn  = document.querySelector("#btn");
-        let sidebar  = document.querySelector(".sidebar");
-        let search8tn  = document.querySelector(".bx-file-find");
+    <section>
+        
+        <div class="assid_test">Welcome to PokeCenter</div> </br>
+        <div class="assid_text"> These are some of our pokemons that are being healed:</div>
+        <div class="body__sec">
+            <div class="swiper mySwiper container__sec">
+                <!--container__sec-->
+                <div class="swiper-wrapper conent__sec">
+                    <!--conent__sec-->
 
-        btn.onclick = function(){
-            sidebar.classList.toggle("active");
-        }
-        search8tn.onclick = function(){
-            sidebar.classList.toggle("active");
-        }
-    </script>
-    <script>
-        function exit(){
-        location.href = '/'
-        }
-    </script>
+                    <div class="swiper-slide card__sec">
+                        <div class="card__sec__content">
+                            <div class="image__sec">
+                                <img src="../_css/_img/Charizard.GIF" alt="">
 
-</body>
+                            </div>
+
+                            <div class="media__icons">
+                                <i class="fa-solid fa-square-pen"></i>
+                                <i class="fa-solid fa-circle-nodes"></i>
+                            </div>
+
+                            <div class="name_type_pokemon">
+                                <span class="name_pokemon">Charizard</span>
+                                <span class="type_pokemon">Fire</span>
+                            </div>
+
+                            <div class="ratting">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+
+                            <div class="button">
+                                <button class="datasheet">Datasheet</button>
+                                <button class="comments">Comments</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card__sec">
+                        <div class="card__sec__content">
+                            <div class="image__sec">
+                                <img src="../_css/_img/Raichu.webp" alt="">
+
+                            </div>
+
+                            <div class="media__icons">
+                                <i class="fa-solid fa-square-pen"></i>
+                                <i class="fa-solid fa-circle-nodes"></i>
+                            </div>
+
+                            <div class="name_type_pokemon">
+                                <span class="name_pokemon">Raichu</span>
+                                <span class="type_pokemon">Electric</span>
+                            </div>
+
+                            <div class="ratting">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+
+                            <div class="button">
+                                <button class="datasheet">Datasheet</button>
+                                <button class="comments">Comments</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card__sec">
+                        <div class="card__sec__content">
+                            <div class="image__sec">
+                                <img src="../_css/_img/growlithe.gif" alt="">
+
+                            </div>
+
+                            <div class="media__icons">
+                                <i class="fa-solid fa-square-pen"></i>
+                                <i class="fa-solid fa-circle-nodes"></i>
+                            </div>
+
+                            <div class="name_type_pokemon">
+                                <span class="name_pokemon">Growlithe</span>
+                                <span class="type_pokemon">Fire</span>
+                            </div>
+
+                            <div class="ratting">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+
+                            <div class="button">
+                                <button class="datasheet">Datasheet</button>
+                                <button class="comments">Comments</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide card__sec">
+                        <div class="card__sec__content">
+                            <div class="image__sec">
+                                <img src="../_css/_img/deogong.gif" alt="">
+
+                            </div>
+
+                            <div class="media__icons">
+                                <i class="fa-solid fa-square-pen"></i>
+                                <i class="fa-solid fa-circle-nodes"></i>
+                            </div>
+
+                            <div class="name_type_pokemon">
+                                <span class="name_pokemon">Dewgong </span>
+                                <span class="type_pokemon">Water</span>
+                            </div>
+
+                            <div class="ratting">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                            </div>
+
+                            <div class="button">
+                                <button class="datasheet">Datasheet</button>
+                                <button class="comments">Comments</button>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="swiper-scrollbar"></div>
+            <div class="swiper-pagination"></div>
+        </div>   
+    </section>
+
+    <body>
+
+         <script src="https://cdn.jsdelivr.net/npm/less"></script>
+
+        <script>
+            less = {
+                env: "development"
+            };
+        </script>
+
+        <script>
+            let btn = document.querySelector("#btn");
+            let sidebar = document.querySelector(".sidebar");
+            let search8tn = document.querySelector(".bx-file-find");
+
+            btn.onclick = function () {
+                sidebar.classList.toggle("active");
+            }
+            search8tn.onclick = function () {
+                sidebar.classList.toggle("active");
+            }
+        </script>
+        <script>
+            function dash() {
+                location.href = '/dash'
+            }
+
+            function exit() {
+                location.href = '/'
+            }
+        </script>
+
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                        slidesPerView: 1,
+                        centeredSlides: false,
+                        slidesPerGroupSkip: 1,
+                        grabCursor: true,
+                        keyboard: {
+                            enabled: true,
+                        },
+                        breakpoints: {
+                            769: {
+                                slidesPerView: 2,
+                                slidesPerGroup: 2,
+                            },
+                        },
+                        scrollbar: {
+                            el: ".swiper-scrollbar",
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
+                    });
+                </script>
+
+    </body>
+</div>
+
 </html>
